@@ -1,0 +1,12 @@
+[Unit]
+Description=Meshtastic Message Sound Alert
+After=meshtasticd.service
+Requires=meshtasticd.service
+
+[Service]
+ExecStart=/home/yourusername/meshtastic-sound.sh
+Restart=always
+User=yourusername
+
+[Install]
+WantedBy=multi-user.target
